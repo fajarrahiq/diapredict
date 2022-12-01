@@ -31,47 +31,7 @@ def main():
   DiabetesPedigreeFunction = st.number_input('DiabetesPedigreeFunction',format = '%f')
   Age = st.number_input('Age',format = '%f')
 
-  #Weight_Category
-  if (BMI < 18.5):
-    Weight_Category_Obesity = 0
-    Weight_Category_Overweight = 0
-    Weight_Category_Underweight = 1
-  elif (BMI >= 25 and BMI <= 29.9):
-    Weight_Category_Obesity = 0
-    Weight_Category_Overweight = 1
-    Weight_Category_Underweight = 0
-  elif (BMI > 30):
-    Weight_Category_Obesity = 1
-    Weight_Category_Overweight = 0
-    Weight_Category_Underweight = 0
-  else:
-    Weight_Category_Obesity = 0
-    Weight_Category_Overweight = 0
-    Weight_Category_Underweight = 0         
-
-  #Insulin_Category
-  if (Insulin >= 16 and Insulin <= 166):
-    Insulin_Category_Normal = 1
-  else:
-    Insulin_Category_Normal = 0
-
-  #Glucose_Category
-  if (Glucose < 70):
-    Glucose_Category_Hipoglikemia = 1
-    Glucose_Category_Normal = 0
-    Glucose_Category_Pradiabetes = 0
-  elif (Glucose >= 70 and Glucose <= 140):
-    Glucose_Category_Hipoglikemia = 0
-    Glucose_Category_Normal = 1
-    Glucose_Category_Pradiabetes = 0
-  elif (Glucose > 140 and Glucose <= 199):
-    Glucose_Category_Hipoglikemia = 0
-    Glucose_Category_Normal = 0
-    Glucose_Category_Pradiabetes = 1
-  else:
-    Glucose_Category_Hipoglikemia = 0
-    Glucose_Category_Normal = 0
-    Glucose_Category_Pradiabetes = 0
+  
 
   safe_html="""  
   <div style="background-color:#F4D03F;padding:10px >
